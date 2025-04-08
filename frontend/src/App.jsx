@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiTwitter, FiExternalLink } from 'react-icons/fi';
 import Navbar from './components/Navbar';
+import profileImg from './assets/profile.png';
+import botecoImg from './assets/boteco-project.jpg';
 
 const projects = [
   {
     title: 'Boteco',
     technologies: ['React', 'Node.js', 'MongoDB'],
-    image: '/src/assets/boteco-project.jpg',
+    image: botecoImg,
     github: '#',
     live: '#',
   },
@@ -44,7 +46,7 @@ const App = () => {
               <div className="relative w-64 h-64 mx-auto">
                 <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
                 <img
-                  src="/src/assets/profile.png"
+                  src={profileImg}
                   alt="Profile"
                   className="relative w-full h-full object-cover rounded-full border-4 border-white/10"
                 />
